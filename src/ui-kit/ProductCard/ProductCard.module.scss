@@ -1,0 +1,36 @@
+//? === Product Card ===
+
+@import 'scss/vars';
+
+.wrapper {
+	width: 100%;
+	max-width: 250px;
+
+	padding: 30px 15px 15px;
+
+	border-radius: 3px;
+	border: 1px solid $lightgray-color;
+}
+
+.image {
+	width: 100%;
+	aspect-ratio: 1.75;
+
+	object-fit: contain;
+	object-position: center;
+
+	margin-bottom: 40px;
+}
+
+.title {
+	max-width: 165px;
+
+	margin-bottom: 12px;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	column-gap: 15px;
+}
