@@ -1,0 +1,19 @@
+//? === Cart List ===
+
+@import 'scss/vars';
+
+.wrapper {
+	padding: 40px;
+
+	border-bottom: 1px solid $gray-color;
+}
+
+.title {
+	margin-bottom: 30px;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 40px;
+}

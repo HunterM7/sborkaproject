@@ -4,4 +4,8 @@
 
 .wrapper {
 	grid-area: aside;
+
+	border-left: 1px solid $gray-color;
+
+	overflow-y: auto;
 }
