@@ -11,11 +11,11 @@ import styles from './Products.module.scss'
 
 const Products = () => {
   return (
-    <div>
+    <main className={styles.products}>
       {productsList.map((product, index) => (
         <ProductCard key={index} {...product} />
       ))}
-    </div>
+    </main>
   )
 }
 
