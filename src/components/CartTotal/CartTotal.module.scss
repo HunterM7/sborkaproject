@@ -3,5 +3,9 @@
 @import 'scss/vars';
 
 .wrapper {
-	padding: 40px;
+	padding: 40px 55px 40px;
+
+	display: flex;
+	flex-direction: column;
+	row-gap: 18px;
 }

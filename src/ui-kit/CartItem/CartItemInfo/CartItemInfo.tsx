@@ -1,8 +1,5 @@
 import React from 'react'
 
-// Utils
-import priceFormatter from 'utils/priceFormatter'
-
 // Components
 import { Counter, PriceCard } from 'ui-kit'
 
@@ -15,8 +12,6 @@ interface ICartItemInfo {
 }
 
 const CartItemInfo: React.FC<ICartItemInfo> = ({ title, price }) => {
-  const formattedPrice = priceFormatter(price)
-
   // Counter
   const [count, setCount] = React.useState(0)
 

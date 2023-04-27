@@ -11,7 +11,7 @@ interface IPriceCard {
   title?: string
   price: number
   fontSize?: number
-  fontWeight?: number
+  fontWeight?: 400 | 700
   className?: string
 }
 

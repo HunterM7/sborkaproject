@@ -2,17 +2,14 @@ import React from 'react'
 
 // Utils
 import { IProduct } from 'utils/types'
-import priceFormatter from 'utils/priceFormatter'
 
 // Components
-import CartButton from '../CartButton/CartButton'
+import { CartButton, PriceCard } from 'ui-kit'
 
 // Styles
 import styles from './ProductCard.module.scss'
 
 const ProductCard: React.FC<IProduct> = ({ title, price, image }) => {
-  const formattedPrice = priceFormatter(price)
-
   return (
     <div className={styles.wrapper}>
       <img className={styles.image} src={image} alt="Product" />
@@ -22,7 +19,7 @@ const ProductCard: React.FC<IProduct> = ({ title, price, image }) => {
       <div className={styles.footer}>
         <CartButton onClick={() => console.log('click')} />
 
-        <p className={styles.price}>$ {formattedPrice}</p>
+        <PriceCard price={price} />
       </div>
     </div>
   )
