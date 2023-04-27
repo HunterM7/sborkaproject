@@ -28,9 +28,10 @@
 
 - HTML
 - SCSS
-- React (FC, custom hooks, HOC)
+- React (FC, custom hooks)
 - React-router-dom
 - TypeScript
+- ClassNames
 - EsLint, Prettier
 
 ### Инструкция по развёртыванию

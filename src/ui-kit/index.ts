@@ -1,3 +1,4 @@
+// Cart Button
 export { default as CartButton } from './CartButton/CartButton'
 
 // ProductCard
@@ -8,3 +9,6 @@ export { default as CartItem } from './CartItem/CartItem'
 
 // Counter
 export { default as Counter } from './Counter/Counter'
+
+// PriceCard
+export { default as PriceCard } from './PriceCard/PriceCard'

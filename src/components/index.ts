@@ -10,3 +10,4 @@ export { default as Products } from './Products/Products'
 // Cart
 export { default as CartBlock } from './CartBlock/CartBlock'
 export { default as CartList } from './CartList/CartList'
+export { default as CartTotal } from './CartTotal/CartTotal'

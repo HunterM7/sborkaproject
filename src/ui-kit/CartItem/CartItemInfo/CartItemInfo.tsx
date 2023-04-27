@@ -4,7 +4,7 @@ import React from 'react'
 import priceFormatter from 'utils/priceFormatter'
 
 // Components
-import { Counter } from 'ui-kit'
+import { Counter, PriceCard } from 'ui-kit'
 
 // Styles
 import styles from './CartItemInfo.module.scss'
@@ -30,7 +30,7 @@ const CartItemInfo: React.FC<ICartItemInfo> = ({ title, price }) => {
         decreseFunc={() => setCount(count - 1)}
       />
 
-      <p className={styles.price}>$ {formattedPrice}</p>
+      <PriceCard price={price} className={styles.price} />
     </div>
   )
 }
