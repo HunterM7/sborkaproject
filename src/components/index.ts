@@ -6,3 +6,6 @@ export { default as Header } from './Header/Header'
 
 // Products
 export { default as Products } from './Products/Products'
+
+// Cart Block
+export { default as CartBlock } from './CartBlock/CartBlock'
