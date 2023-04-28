@@ -10,27 +10,37 @@ import ProductImage6 from './images/product-6.png'
 
 export const productsList: IProduct[] = [
   {
+    id: 'sniker-1',
     title: 'New Balance 574 Vintage Brights',
     price: 650,
     image: ProductImage1,
   },
   {
+    id: 'sniker-2',
     title: 'New Balance Made in UK 920 Chinese New Year',
     price: 1200,
     image: ProductImage2,
   },
   {
+    id: 'sniker-3',
     title: 'New Balance 373 Modern Classics',
     price: 800,
     image: ProductImage3,
   },
   {
+    id: 'sniker-4',
     title: 'New Balance Made in UK 670 Chinese New Year',
     price: 780,
     image: ProductImage4,
   },
-  { title: 'New Balance X-Racer Utility', price: 1000, image: ProductImage5 },
   {
+    id: 'sniker-5',
+    title: 'New Balance X-Racer Utility',
+    price: 1000,
+    image: ProductImage5,
+  },
+  {
+    id: 'sniker-6',
     title: 'New Balance 5740 Think Colorfully',
     price: 940,
     image: ProductImage6,
