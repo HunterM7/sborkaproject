@@ -4,6 +4,9 @@ import { NavLink } from 'react-router-dom'
 // Assets
 import { logoIcon, cartIcon } from 'assets/icons'
 
+// Components
+import { CartLink } from 'ui-kit'
+
 // Styles
 import styles from './Header.module.scss'
 
@@ -15,9 +18,7 @@ const Header = () => {
           {logoIcon}
         </NavLink>
 
-        <NavLink to="/cart" className={styles.cart}>
-          {cartIcon}
-        </NavLink>
+        <CartLink count={1} />
       </div>
     </header>
   )

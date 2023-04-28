@@ -18,31 +18,9 @@
 	@include container;
 }
 
-.cart {
-	width: 32px;
-	height: 32px;
-
-	position: relative;
-	right: -4px;
-
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	flex-shrink: 0;
-}
-
 .logo {
 	svg {
 		width: 89px;
 		height: 32px;
-	}
-}
-
-.cart {
-	svg {
-		width: 24px;
-		height: 24px;
-		flex-shrink: 0;
 	}
 }
