@@ -1,13 +1,16 @@
 import React from 'react'
 
+// Router
+import Router from 'Router/Router'
+
 // Components
-import { Header, Products, CartBlock } from 'components'
+import { Header, CartBlock } from 'components'
 
 function App() {
   return (
     <>
       <Header />
-      <Products />
+      <Router />
       <CartBlock />
     </>
   )

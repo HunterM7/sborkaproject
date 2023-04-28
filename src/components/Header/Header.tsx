@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 // Assets
-import { logoIcon, cartIcon } from 'assets/icons'
+import { logoIcon } from 'assets/icons'
 
 // Components
 import { CartLink } from 'ui-kit'
@@ -18,7 +18,7 @@ const Header = () => {
           {logoIcon}
         </NavLink>
 
-        <CartLink count={1} />
+        <CartLink count={0} />
       </div>
     </header>
   )

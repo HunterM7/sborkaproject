@@ -1,6 +1,5 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import cn from 'classnames'
 
 // Assets
 import { cartIcon } from 'assets/icons'
@@ -14,11 +13,7 @@ interface ICartLink {
 
 const CartLink: React.FC<ICartLink> = ({ count }) => {
   return (
-    <NavLink
-      data-count={count}
-      to="/cart"
-      className={cn(styles.cart, count && styles.cart_counted)}
-    >
+    <NavLink data-count={count || null} to="/cart" className={styles.cart}>
       {cartIcon}
     </NavLink>
   )

@@ -18,25 +18,23 @@
 		height: 100%;
 	}
 
-	&_counted {
-		&::after {
-			content: attr(data-count);
+	&::after {
+		content: attr(data-count);
 
-			min-width: 13px;
+		min-width: 13px;
 
-			position: absolute;
-			top: -6px;
-			right: -6px;
-			padding: 0 3px;
+		position: absolute;
+		top: -6px;
+		right: -6px;
+		padding: 0 3px;
 
-			font-size: 10px;
-			font-weight: 400;
-			line-height: 13px;
-			text-align: center;
-			color: $white-color;
+		font-size: 10px;
+		font-weight: 400;
+		line-height: 13px;
+		text-align: center;
+		color: $white-color;
 
-			border-radius: 10px;
-			background-color: $primary-color;
-		}
+		border-radius: 10px;
+		background-color: $primary-color;
 	}
 }
