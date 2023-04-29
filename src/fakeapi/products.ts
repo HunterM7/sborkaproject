@@ -26,7 +26,7 @@ import ProductImage6_small from './images/small/product-6.png'
 
 export const productsList: IProduct[] = [
   {
-    id: 'sniker-1',
+    id: 'MT91547',
     title: 'New Balance 574 Vintage Brights',
     price: 650,
     bigImage: ProductImage1_large,
@@ -34,7 +34,7 @@ export const productsList: IProduct[] = [
     mediumImage: ProductImage1_medium,
   },
   {
-    id: 'sniker-2',
+    id: 'MT93825',
     title: 'New Balance Made in UK 920 Chinese New Year',
     price: 1200,
     bigImage: ProductImage2_large,
@@ -42,7 +42,7 @@ export const productsList: IProduct[] = [
     mediumImage: ProductImage2_medium,
   },
   {
-    id: 'sniker-3',
+    id: 'MT61837',
     title: 'New Balance 373 Modern Classics',
     price: 800,
     bigImage: ProductImage3_large,
@@ -50,7 +50,7 @@ export const productsList: IProduct[] = [
     mediumImage: ProductImage3_medium,
   },
   {
-    id: 'sniker-4',
+    id: 'MT87361',
     title: 'New Balance Made in UK 670 Chinese New Year',
     price: 780,
     bigImage: ProductImage4_large,
@@ -58,7 +58,7 @@ export const productsList: IProduct[] = [
     mediumImage: ProductImage4_medium,
   },
   {
-    id: 'sniker-5',
+    id: 'MT62018',
     title: 'New Balance X-Racer Utility',
     price: 1000,
     bigImage: ProductImage5_large,
@@ -66,7 +66,7 @@ export const productsList: IProduct[] = [
     mediumImage: ProductImage5_medium,
   },
   {
-    id: 'sniker-6',
+    id: 'MT40291',
     title: 'New Balance 5740 Think Colorfully',
     price: 940,
     bigImage: ProductImage6_large,
