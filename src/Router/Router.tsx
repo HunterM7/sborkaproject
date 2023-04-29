@@ -5,15 +5,15 @@ import { Route, Routes } from 'react-router-dom'
 import { baseUrl, cartLink, productLink } from 'utils/routes'
 
 // Components
-import { Product, Products } from 'layouts'
+import { ProductLayout, ProductsLayout } from 'layouts'
 
 const Router: React.FC = () => {
   return (
     <>
       <Routes>
-        <Route path={baseUrl} element={<Products />} />
+        <Route path={baseUrl} element={<ProductsLayout />} />
         <Route path={cartLink} element={<h1>Cart</h1>} />
-        <Route path={`${productLink}:id`} element={<Product />} />
+        <Route path={`${productLink}:id`} element={<ProductLayout />} />
       </Routes>
     </>
   )

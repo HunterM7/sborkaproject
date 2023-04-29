@@ -1,3 +1,3 @@
-// Products
-export { default as Product } from './Product/Product'
-export { default as Products } from './Products/Products'
+// Product
+export { default as ProductLayout } from './ProductLayout/ProductLayout'
+export { default as ProductsLayout } from './ProductsLayout/ProductsLayout'

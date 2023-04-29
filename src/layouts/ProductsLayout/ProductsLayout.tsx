@@ -7,9 +7,9 @@ import { productsList } from 'fakeapi/products'
 import { ProductCard } from 'ui-kit'
 
 // Styles
-import styles from './Products.module.scss'
+import styles from './ProductsLayout.module.scss'
 
-const Products = () => {
+const ProductsLayout = () => {
   return (
     <main className={styles.products}>
       {productsList.map((product, index) => (
@@ -19,4 +19,4 @@ const Products = () => {
   )
 }
 
-export default Products
+export default ProductsLayout
