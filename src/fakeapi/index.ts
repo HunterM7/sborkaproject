@@ -1,19 +1,11 @@
-// Utils
-import { IProduct } from 'utils/types'
-
 // Products
 import { productsList } from './products'
 
-interface IFetch<T> {
-  json: () => Promise<T>
-}
-type IFetchProduct = IFetch<IProduct>
-type IFetchProducts = IFetch<IProduct[]>
-
 export function fetchProduct(id: string) {
-  return new Promise<IFetchProduct>(resolve => {
+  return new Promise<Response>(resolve => {
     setTimeout(() => {
       resolve({
+        ok: true,
         json() {
           return new Promise((resolve, reject) => {
             const product = productsList.find(el => el.id === id)
@@ -25,21 +17,22 @@ export function fetchProduct(id: string) {
             }
           })
         },
-      })
+      } as Response)
     }, 3000)
   })
 }
 
 export function fetchProducts() {
-  return new Promise<IFetchProducts>(resolve => {
+  return new Promise<Response>(resolve => {
     setTimeout(() => {
       resolve({
+        ok: true,
         json() {
           return new Promise(resolve => {
             resolve(productsList)
           })
         },
-      })
+      } as Response)
     }, 3000)
   })
 }
