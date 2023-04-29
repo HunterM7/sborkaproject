@@ -13,7 +13,7 @@ const Router: React.FC = () => {
       <Routes>
         <Route path={baseUrl} element={<Products />} />
         <Route path={cartLink} element={<h1>Cart</h1>} />
-        <Route path={productLink} element={<Product />} />
+        <Route path={`${productLink}:id`} element={<Product />} />
       </Routes>
     </>
   )

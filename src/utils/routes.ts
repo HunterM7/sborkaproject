@@ -1,3 +1,3 @@
 export const baseUrl = '/'
 export const cartLink = 'cart/'
-export const productLink = 'product/:id'
+export const productLink = 'product/'

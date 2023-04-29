@@ -13,7 +13,7 @@ import styles from './CartItem.module.scss'
 const CartItem: React.FC<IProduct> = product => {
   return (
     <div className={styles.wrapper}>
-      <img className={styles.image} src={product.bigImage} alt="Product" />
+      <img className={styles.image} src={product.smallImage} alt="Product" />
 
       <CartItemInfo {...product} />
 
