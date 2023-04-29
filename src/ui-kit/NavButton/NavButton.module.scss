@@ -1,0 +1,15 @@
+//? === Nav Button ===
+
+@import 'scss/vars';
+
+.wrapper {
+	font-size: 14px;
+	color: $white-color;
+
+	display: inline-block;
+
+	padding: 12px 30px;
+
+	border-radius: 3px;
+	background-color: $primary-color;
+}

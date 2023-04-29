@@ -8,3 +8,6 @@ export { default as Header } from './Header/Header'
 export { default as CartBlock } from './CartBlock/CartBlock'
 export { default as CartList } from './CartList/CartList'
 export { default as CartTotal } from './CartTotal/CartTotal'
+
+// Product
+export { default as Product } from './Product/Product'
