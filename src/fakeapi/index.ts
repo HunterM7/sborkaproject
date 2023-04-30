@@ -1,6 +1,8 @@
 // Products
 import { productsList } from './products'
 
+const delay = 2000
+
 export function fetchProduct(id: string) {
   return new Promise<Response>(resolve => {
     setTimeout(() => {
@@ -18,7 +20,7 @@ export function fetchProduct(id: string) {
           })
         },
       } as Response)
-    }, 3000)
+    }, delay)
   })
 }
 
@@ -33,6 +35,6 @@ export function fetchProducts() {
           })
         },
       } as Response)
-    }, 3000)
+    }, delay)
   })
 }

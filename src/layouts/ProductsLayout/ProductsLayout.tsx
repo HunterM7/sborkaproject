@@ -1,20 +1,27 @@
 import React from 'react'
 
-// Fake API
-import { productsList } from 'fakeapi/products'
+// Utils
+import { useIngredients } from 'hooks/useIngredients'
 
 // Components
-import { ProductCard } from 'ui-kit'
+import { Loader } from 'ui-kit'
+import { ProductsList } from 'components'
 
 // Styles
 import styles from './ProductsLayout.module.scss'
 
 const ProductsLayout = () => {
+  const { products, isLoading, hasError } = useIngredients()
+
   return (
     <main className={styles.products}>
-      {productsList.map((product, index) => (
-        <ProductCard key={index} {...product} />
-      ))}
+      {isLoading ? (
+        <Loader />
+      ) : hasError || !products ? (
+        <h2>Что-то пошло не так</h2>
+      ) : (
+        <ProductsList products={products} />
+      )}
     </main>
   )
 }
