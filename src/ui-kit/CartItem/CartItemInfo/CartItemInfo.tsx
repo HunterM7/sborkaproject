@@ -1,5 +1,9 @@
 import React from 'react'
 
+// Utils
+import { IProduct } from 'utils/types'
+import { useCart } from 'hooks/useCart'
+
 // Components
 import { Counter, PriceCard } from 'ui-kit'
 
@@ -7,25 +11,28 @@ import { Counter, PriceCard } from 'ui-kit'
 import styles from './CartItemInfo.module.scss'
 
 interface ICartItemInfo {
-  title: string
-  price: number
+  product: IProduct
 }
 
-const CartItemInfo: React.FC<ICartItemInfo> = ({ title, price }) => {
+const CartItemInfo: React.FC<ICartItemInfo> = ({ product }) => {
   // Counter
-  const [count, setCount] = React.useState(0)
+  // const [count, setCount] = React.useState(0)
+
+  const { cart, addProduct } = useCart()
+
+  const count = cart?.find(el => el.id === product.id)?.count
 
   return (
     <div className={styles.wrapper}>
-      <h5 className={styles.title}>{title}</h5>
+      <h5 className={styles.title}>{product.title}</h5>
 
       <Counter
-        amount={count}
-        increseFunc={() => setCount(count + 1)}
-        decreseFunc={() => setCount(count - 1)}
+        amount={count || 0}
+        increseFunc={() => addProduct(product)}
+        decreseFunc={() => console.log('test')}
       />
 
-      <PriceCard price={price} className={styles.price} />
+      <PriceCard price={product.price} className={styles.price} />
     </div>
   )
 }

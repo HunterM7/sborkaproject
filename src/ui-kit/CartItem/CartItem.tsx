@@ -15,7 +15,7 @@ const CartItem: React.FC<IProduct> = product => {
     <div className={styles.wrapper}>
       <img className={styles.image} src={product.smallImage} alt="Product" />
 
-      <CartItemInfo {...product} />
+      <CartItemInfo product={product} />
 
       <button className={styles.close}>{closeIcon}</button>
     </div>
